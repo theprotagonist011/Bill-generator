@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Bill Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🍽️ Restaurant Bill Generator</h1>
+
+        <!-- Food Selection -->
+        <div class="form-group">
+            <label for="food">Select Food Item</label>
+
+            <select id="food">
+                <!-- Options will be added using JavaScript -->
+            </select>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-group">
+            <label for="qty">Quantity</label>
+
+            <input
+                type="number"
+                id="qty"
+                value="1"
+                min="1"
+            >
+        </div>
+
+        <!-- Button -->
+        <button id="addBtn">
+            Add Item
+        </button>
+
+        <hr>
+
+        <!-- Bill Table -->
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Item</th>
+                    <th>Price (₹)</th>
+                    <th>Qty</th>
+                    <th>Amount (₹)</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="billBody">
+
+                <!-- Items will appear here -->
+
+            </tbody>
+
+        </table>
+
+        <hr>
+
+        <!-- Totals -->
+        <div class="total-section">
+
+            <p>
+                <strong>Subtotal:</strong>
+                ₹<span id="subtotal">0</span>
+            </p>
+
+            <p>
+                <strong>GST (5%):</strong>
+                ₹<span id="gst">0</span>
+            </p>
+
+            <h2>
+                Grand Total:
+                ₹<span id="grandTotal">0</span>
+            </h2>
+
+        </div>
+
+        <button id="clearBtn">
+            Clear Bill
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
