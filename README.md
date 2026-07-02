@@ -26,6 +26,8 @@ Restaurant-Bill-Generator/
 │── script.js
 │── README.md
 ```
+## Deployed Link
+https://theprotagonist011.github.io/Bill-generator/
 
 
 ## Author
